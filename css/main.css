@@ -189,7 +189,7 @@
    background-image: url(../picture/button1.jpg);
    background-size: 100% 100%;
    position: absolute;
-   bottom: 10%;
+   bottom: 0%;
    left: 20%;
 }
 
@@ -200,7 +200,7 @@
   background-image: url(../picture/button2.jpg);
   background-size: 100% 100%;
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   right: 20%;
 
 }
