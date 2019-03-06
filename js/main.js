@@ -44,7 +44,7 @@ function init()
       });
    $('.activity').hide();
    $('#activity1').show();
-   $(".media").css('height',$('#maindiv1').height()/7);
+   $(".media").css('height',$('#maindiv1').height()/8);
    $('.carddiv').hide();
    /*
    var audio1=document.getElementById('media1');
