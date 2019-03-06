@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Happy Girl's Day!</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src = "js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src = "js/main.js"></script>
+</head>
+<body>
+    <div id="father_div1" class="father_div">
+            <div id="lead">
+            	<div id="lead1" class="leadbutton"><p>先听听他们的祝福吧:</p></div>
+            	<div id="lead2" class="leadbutton"><p>抽取你的节日幸运签吧！</p></div>
+            	<div id="lead3" class="leadbutton"><p>照片墙</p></div>
+            </div>
+            <canvas id="canvas1"> </canvas>
+            <div id="maindiv1" class="maindiv" style="text-align:center;">
+
+                    <audio  class="media" id="media1" controls>
+                      <source src="media/mp31.mp3" type="audio/mpeg">
+                    您的浏览器不支持 audio 元素。
+                    </audio>
+
+                    <audio  class="media" id="media2" controls>
+                      <source src="media/mp32.mp3" type="audio/mpeg">
+                    您的浏览器不支持 audio 元素。
+                    </audio>
+
+                    <audio  class="media" id="media3" controls>
+                      <source src="media/mp33.mp3" type="audio/mpeg">
+                    您的浏览器不支持 audio 元素。
+                    </audio>
+
+                    <audio  class="media" id="media4" controls>
+                      <source src="media/mp34.mp3" type="audio/mpeg">
+                    您的浏览器不支持 audio 元素。
+                    </audio>
+
+                    <audio  class="media" id="media5" controls>
+                      <source src="media/mp35.mp3" type="audio/mpeg">
+                    您的浏览器不支持 audio 元素。
+                    </audio>
+
+                    <audio class="media" id="media6" controls>
+                      <source src="media/mp36.mp3" type="audio/mpeg">
+                    您的浏览器不支持 audio 元素。
+                    </audio>
+
+<!--
+                    <div id="mediadiv1" class="mediadiv"></div>
+                    <div id="mediadiv2" class="mediadiv"></div>
+                    <div id="mediadiv3" class="mediadiv"></div>
+                    <div id="mediadiv4" class="mediadiv"></div>
+                    <div id="mediadiv5" class="mediadiv"></div>
+                    <div id="mediadiv6" class="mediadiv"></div>
+                    <div id="mediap">Tips:请调整音量，并分别点击上方六个播放按钮</div>-->
+            </div>
+            <div id="maindiv2" class="maindiv" style="text-align:center;">
+                <img src="picture/card1.gif" class="card" id="card1">
+                <img src="picture/card2.jpg" class="card" id="card2">
+                <img src="picture/card3.jpg" class="card" id="card3">
+                <img src="picture/card4.jpg" class="card" id="card4">
+                <img src="picture/card5.jpg" class="card" id="card5">
+                <img src="picture/card6.jpg" class="card" id="card6">
+                <button class="button" onclick="getcard()">抽取幸运签！</button>
+            </div>
+            <div id="maindiv3" class="maindiv">
+                <div id="button1">hhh</div>
+                <div id="button2"></div>
+                <div id="photowall"></div>                      
+            </div>
+            <div id="photo">
+            	<p>
+        	    	<img src="picture/photo1.jpg" id="photo1" width="100px" height="100px">
+        	    	source:共青团华南师范大学信息与光电子科技学院委员会科技部
+        	    </p>
+            </div> 
+    </div> 
+    <div class="father_div" id="father_div2" style="text-align:center;">
+        <div id="p1">今天</div>
+        <div id="p2">女生节</div>
+        <div id="p3">我们精心为你准备了这个网页做为一份礼物</div>
+    </div>
+    <div id="father_div3" class="father_div" >
+        <div id="signin_div">
+            <p id="p4">登陆界面</p>
+            姓名：<input type="text" name="signin" value="" id="signin_input" >
+            <br>
+            <br>
+            <button id="signin_button" onclick="signin()">登陆</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+    	init();
+    </script>
+</body>
+</html>
