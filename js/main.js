@@ -1,8 +1,51 @@
 var card_flag=1;
-var debug_flag=3;
+var debug_flag=1;
+var picture_flag=1;
 function init()
 {
+   $('#button1').click(function()
+      {
+         if(picture_flag>1)
+         {
+            picture_flag--;
+            $('.activity').hide();
+            $('#activity'+picture_flag).fadeIn(1000);
+         }
+      });
+   $('#button2').click(function()
+      {
+         if(picture_flag<4)
+         {
+            picture_flag++;
+            $('.activity').hide();
+            $('.last').hide();
+            if (picture_flag<4)
+            {$('#activity'+picture_flag).fadeIn(2000);}
+            else
+            {$('#activity4').show();
+               $('#last1').fadeIn(1500,function()
+               {
+                  $('#last2').fadeIn(1500,function()
+                  {
+                     $('#last3').fadeIn(1500,function()
+                     {
+                         $('#last4').fadeIn(1500,function()
+                         {
+                              $('#last5').fadeIn(1500,function()
+                                 {
+                                    $('#last6').fadeIn(1500);
+                                 });
+                         });
+                     });
+                  });
+               });
+            };
+         }
+      });
+   $('.activity').hide();
+   $('#activity1').show();
    $(".media").css('height',$('#maindiv1').height()/7);
+   $('.carddiv').hide();
    /*
    var audio1=document.getElementById('media1');
    var audio2=document.getElementById('media2');
@@ -168,6 +211,7 @@ function getcard()
    {
       var random=parseInt(Math.random()*6+1);
       $('#card'+random).slideDown();
+      $('#carddiv'+random).fadeIn(2000);
    }
    card_flag=0;
 }
