@@ -83,7 +83,6 @@
 .card
 {
 	width: 100%;
-	border: solid;
  
 }
 
@@ -190,7 +189,7 @@
    background-image: url(../picture/button1.jpg);
    background-size: 100% 100%;
    position: absolute;
-   bottom: 0%;
+   bottom: 20%;
    left: 20%;
 }
 
@@ -201,7 +200,7 @@
   background-image: url(../picture/button2.jpg);
   background-size: 100% 100%;
   position: absolute;
-  bottom: 0%;
+  bottom: 20%;
   right: 20%;
 
 }
@@ -272,3 +271,25 @@
 }
 
 */
+
+.carddiv
+{
+	font-style:italic;
+	position: absolute;
+	bottom: 10%;
+	font-size: 60px;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	text-align: center;
+	width: 100%;
+	color: black;
+	text-shadow: 10px 10px 0px #999;
+}
+
+.activity
+{
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	text-align: center;
+	font-size: 55px;
+}
