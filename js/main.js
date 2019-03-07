@@ -31,7 +31,10 @@ function init()
                      {
                          $('#last4').fadeIn(1500,function()
                          {
-                              $('#last5').fadeIn(1500);
+                              $('#last5').fadeIn(1500,function()
+                                 {
+                                    $('#last6').fadeIn(1500);
+                                 });
                          });
                      });
                   });
